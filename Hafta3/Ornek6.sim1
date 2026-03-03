@@ -1,0 +1,45 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Battery" CircId="Battery-1" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="-396,16" rotation="90" hflip="1" vflip="1" label="Battery-1" idLabPos="-18,-22" labelrot="0" valLabPos="-10,10" valLabRot="0" Voltage="20 V" Resistance="1e-11 mΩ" />
+
+<item itemtype="Resistor" CircId="Resistor-2" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-336,-40" rotation="0" hflip="1" vflip="1" label="Resistor-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="5 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-3" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-228,-40" rotation="0" hflip="1" vflip="1" label="Resistor-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="2 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-4" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-284,12" rotation="90" hflip="1" vflip="1" label="Resistor-4" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="10 Ω" />
+
+<item itemtype="Battery" CircId="Battery-5" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="-152,12" rotation="90" hflip="1" vflip="1" label="Battery-5" idLabPos="-18,-22" labelrot="0" valLabPos="-10,10" valLabRot="0" Voltage="8 V" Resistance="1e-11 mΩ" />
+
+<item itemtype="Amperimeter" CircId="Amperimeter-8" mainComp="false" Show_id="false" Show_Val="false" Pos="-388,-56" rotation="0" hflip="1" vflip="1" label="Amperimeter-8" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Amperimeter" CircId="Amperimeter-9" mainComp="false" Show_id="false" Show_Val="false" Pos="-168,-56" rotation="0" hflip="1" vflip="1" label="Amperimeter-9" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Amperimeter" CircId="Amperimeter-10" mainComp="false" Show_id="false" Show_Val="false" Pos="-268,-20" rotation="90" hflip="1" vflip="1" label="Amperimeter-10" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Node" CircId="Node-7" mainComp="false" Pos="-284,64" />
+
+<item itemtype="Node" CircId="Node-11" mainComp="false" Pos="-284,-40" />
+
+<item itemtype="Connector" uid="Connector-8" startpinid="Node-7-1" endpinid="Battery-5-rPin" pointList="-284,64,-152,64,-152,28" />
+
+<item itemtype="Connector" uid="Connector-9" startpinid="Resistor-4-rPin" endpinid="Node-7-0" pointList="-284,28,-284,64" />
+
+<item itemtype="Connector" uid="Connector-10" startpinid="Node-7-2" endpinid="Battery-1-rPin" pointList="-284,64,-396,64,-396,32" />
+
+<item itemtype="Connector" uid="Connector-11" startpinid="Amperimeter-8-lPin" endpinid="Battery-1-lPin" pointList="-396,-40,-396,0" />
+
+<item itemtype="Connector" uid="Connector-12" startpinid="Amperimeter-8-rPin" endpinid="Resistor-2-lPin" pointList="-380,-40,-352,-40" />
+
+<item itemtype="Connector" uid="Connector-13" startpinid="Resistor-3-rPin" endpinid="Amperimeter-9-lPin" pointList="-212,-40,-176,-40" />
+
+<item itemtype="Connector" uid="Connector-14" startpinid="Amperimeter-9-rPin" endpinid="Battery-5-lPin" pointList="-160,-40,-152,-40,-152,-4" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="Amperimeter-10-rPin" endpinid="Resistor-4-lPin" pointList="-284,-12,-284,-4" />
+
+<item itemtype="Connector" uid="Connector-17" startpinid="Amperimeter-10-lPin" endpinid="Node-11-1" pointList="-284,-28,-284,-40" />
+
+<item itemtype="Connector" uid="Connector-18" startpinid="Resistor-2-rPin" endpinid="Node-11-0" pointList="-320,-40,-284,-40" />
+
+<item itemtype="Connector" uid="Connector-19" startpinid="Node-11-2" endpinid="Resistor-3-lPin" pointList="-284,-40,-244,-40" />
+
+</circuit>

@@ -1,0 +1,51 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Battery" CircId="Battery-1" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="-380,32" rotation="90" hflip="1" vflip="1" label="Battery-1" idLabPos="-18,-22" labelrot="0" valLabPos="-10,10" valLabRot="0" Voltage="4 V" Resistance="1e-11 mΩ" />
+
+<item itemtype="Battery" CircId="Battery-2" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="-212,-28" rotation="0" hflip="1" vflip="1" label="Battery-2" idLabPos="-18,-22" labelrot="0" valLabPos="-10,10" valLabRot="0" Voltage="3 V" Resistance="1 mΩ" />
+
+<item itemtype="Battery" CircId="Battery-3" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="-308,44" rotation="90" hflip="1" vflip="1" label="Battery-3" idLabPos="-18,-22" labelrot="0" valLabPos="-10,10" valLabRot="0" Voltage="8 V" Resistance="1 mΩ" />
+
+<item itemtype="Csource" CircId="Csource-4" mainComp="false" Show_id="false" Show_Val="false" Pos="-252,44" rotation="0" hflip="1" vflip="1" label="Csource-4" idLabPos="4,-28" labelrot="0" valLabPos="4,18" valLabRot="0" Control_Pins="true" CurrSource="true" CurrControl="false" Gain="1" Voltage="5 V" Current="1 A" />
+
+<item itemtype="Resistor" CircId="Resistor-5" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-316,-32" rotation="0" hflip="1" vflip="1" label="Resistor-5" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="1 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-6" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-136,-28" rotation="0" hflip="1" vflip="1" label="Resistor-6" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="2 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-7" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-76,28" rotation="90" hflip="1" vflip="1" label="Resistor-7" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="4 Ω" />
+
+<item itemtype="Amperimeter" CircId="Amperimeter-10" mainComp="false" Show_id="false" Show_Val="false" Pos="-368,-48" rotation="0" hflip="1" vflip="1" label="Amperimeter-10" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Amperimeter" CircId="Amperimeter-13" mainComp="false" Show_id="false" Show_Val="false" Pos="-156,80" rotation="0" hflip="1" vflip="1" label="Amperimeter-13" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Node" CircId="Node-9" mainComp="false" Pos="-252,-32" />
+
+<item itemtype="Node" CircId="Node-14" mainComp="false" Pos="-252,100" />
+
+<item itemtype="Connector" uid="Connector-1" startpinid="Battery-3-lPin" endpinid="Csource-4-cpPin" pointList="-308,28,-276,28,-276,36" />
+
+<item itemtype="Connector" uid="Connector-2" startpinid="Battery-3-rPin" endpinid="Csource-4-cmPin" pointList="-308,60,-276,60,-276,52" />
+
+<item itemtype="Connector" uid="Connector-5" startpinid="Battery-2-rPin" endpinid="Resistor-6-lPin" pointList="-196,-28,-152,-28" />
+
+<item itemtype="Connector" uid="Connector-6" startpinid="Resistor-6-rPin" endpinid="Resistor-7-lPin" pointList="-120,-28,-76,-28,-76,12" />
+
+<item itemtype="Connector" uid="Connector-11" startpinid="Csource-4-s1Pin" endpinid="Node-9-1" pointList="-252,24,-252,-32" />
+
+<item itemtype="Connector" uid="Connector-12" startpinid="Resistor-5-rPin" endpinid="Node-9-0" pointList="-300,-32,-252,-32" />
+
+<item itemtype="Connector" uid="Connector-13" startpinid="Node-9-2" endpinid="Battery-2-lPin" pointList="-252,-32,-228,-32,-228,-28" />
+
+<item itemtype="Connector" uid="Connector-14" startpinid="Amperimeter-10-lPin" endpinid="Battery-1-lPin" pointList="-376,-32,-376,16,-380,16" />
+
+<item itemtype="Connector" uid="Connector-15" startpinid="Amperimeter-10-rPin" endpinid="Resistor-5-lPin" pointList="-360,-32,-332,-32" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="Amperimeter-13-lPin" endpinid="Node-14-1" pointList="-164,96,-252,96,-252,100" />
+
+<item itemtype="Connector" uid="Connector-23" startpinid="Battery-1-rPin" endpinid="Node-14-0" pointList="-380,48,-380,100,-252,100" />
+
+<item itemtype="Connector" uid="Connector-24" startpinid="Node-14-2" endpinid="Csource-4-s2Pin" pointList="-252,100,-252,64" />
+
+<item itemtype="Connector" uid="Connector-25" startpinid="Amperimeter-13-rPin" endpinid="Resistor-7-rPin" pointList="-148,96,-76,96,-76,44" />
+
+</circuit>
