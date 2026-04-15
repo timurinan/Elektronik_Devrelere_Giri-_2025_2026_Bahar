@@ -1,0 +1,45 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="WaveGen" CircId="WaveGen-1" mainComp="false" Show_id="false" Show_Val="false" Pos="-420,-36" rotation="0" hflip="1" vflip="1" label="WaveGen-1" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Running="true" Wave_Type="Sine" Freq="1 kHz" Phase="0 _º" Steps="100 _Steps" Duty="50 _%" Always_On="false" Bipolar="true" Floating="false" Semi_Ampli="2.5 V" Mid_Volt="0 V" />
+
+<item itemtype="elCapacitor" CircId="elCapacitor-17" mainComp="false" ShowProp="Capacitance" Show_id="false" Show_Val="true" Pos="-316,-40" rotation="0" hflip="-1" vflip="1" label="elCapacitor-17" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Capacitance="10 µF" Resistance="1 µΩ" InitVolt="0 V" ReaStep="0 ns" />
+
+<item itemtype="Diode" CircId="Diode-18" mainComp="false" Show_id="false" Show_Val="false" Pos="-236,12" rotation="-90" hflip="1" vflip="1" label="Diode-18" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Model="Diode Default" Threshold="0.634767 V" MaxCurrent="1 A" Resistance="0.05 Ω" BrkDownV="0 V" SatCurrent="171.435 nA" EmCoef="2" />
+
+<item itemtype="Resistor" CircId="Resistor-19" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-160,4" rotation="90" hflip="1" vflip="1" label="Resistor-19" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Ground" CircId="Ground-22" mainComp="false" Show_id="false" Show_Val="false" Pos="-280,100" rotation="0" hflip="1" vflip="1" label="Ground-22" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Oscope" CircId="Oscope-24" mainComp="false" Show_id="false" Show_Val="false" Pos="4,12" rotation="0" hflip="1" vflip="1" label="Oscope-24" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _px" Basic_Y="135 _px" BufferSize="600000" connectGnd="true" InputImped="10 MΩ" TimDiv="1000000000" TimPos="0,0,0,0," VolDiv="1,1,1,1," Tunnels=",,,," Trigger="4" Filter="0.1 V" AutoSC="4" Tracks="1" HideCh="false,false,false,false," VolPos="0,0,0,0," />
+
+<item itemtype="Node" CircId="Node-20" mainComp="false" Pos="-236,-40" />
+
+<item itemtype="Node" CircId="Node-21" mainComp="false" Pos="-236,48" />
+
+<item itemtype="Node" CircId="Node-23" mainComp="false" Pos="-280,48" />
+
+<item itemtype="Node" CircId="Node-25" mainComp="false" Pos="-160,-40" />
+
+<item itemtype="Connector" uid="Connector-30" startpinid="elCapacitor-17-rPin" endpinid="WaveGen-1-outnod" pointList="-332,-40,-404,-40" />
+
+<item itemtype="Connector" uid="Connector-33" startpinid="Diode-18-rPin" endpinid="Node-20-0" pointList="-236,-4,-236,-40" />
+
+<item itemtype="Connector" uid="Connector-34" startpinid="Node-20-2" endpinid="elCapacitor-17-lPin" pointList="-236,-40,-300,-40" />
+
+<item itemtype="Connector" uid="Connector-36" startpinid="Diode-18-lPin" endpinid="Node-21-1" pointList="-236,28,-236,48" />
+
+<item itemtype="Connector" uid="Connector-38" startpinid="Node-21-2" endpinid="Resistor-19-rPin" pointList="-236,48,-160,48,-160,20" />
+
+<item itemtype="Connector" uid="Connector-39" startpinid="Ground-22-Gnd" endpinid="Node-23-1" pointList="-280,84,-280,48" />
+
+<item itemtype="Connector" uid="Connector-40" startpinid="WaveGen-1-gndnod" endpinid="Node-23-0" pointList="-404,-32,-404,48,-280,48" />
+
+<item itemtype="Connector" uid="Connector-41" startpinid="Node-23-2" endpinid="Node-21-0" pointList="-280,48,-236,48" />
+
+<item itemtype="Connector" uid="Connector-42" startpinid="Oscope-24-Pin0" endpinid="Node-25-1" pointList="-84,-36,-160,-36,-160,-40" />
+
+<item itemtype="Connector" uid="Connector-43" startpinid="Resistor-19-lPin" endpinid="Node-25-0" pointList="-160,-12,-160,-40" />
+
+<item itemtype="Connector" uid="Connector-44" startpinid="Node-25-2" endpinid="Node-20-1" pointList="-160,-40,-236,-40" />
+
+</circuit>

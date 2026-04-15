@@ -1,0 +1,67 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="WaveGen" CircId="WaveGen-1" mainComp="false" Show_id="false" Show_Val="false" Pos="-420,-32" rotation="0" hflip="1" vflip="1" label="WaveGen-1" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Running="true" Wave_Type="Sine" Freq="1 kHz" Phase="0 _º" Steps="100 _Steps" Duty="50 _%" Always_On="false" Bipolar="true" Floating="false" Semi_Ampli="2.5 V" Mid_Volt="0 V" />
+
+<item itemtype="Transformer" CircId="Transformer-2" mainComp="false" Show_id="false" Show_Val="false" Pos="-332,-44" rotation="0" hflip="1" vflip="1" label="Transformer-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" CoupCoeff="0.99" BaseInd="1 H" Primary="1" Secondary="1" />
+
+<item itemtype="Diode" CircId="Diode-3" mainComp="false" Show_id="false" Show_Val="false" Pos="-240,-56" rotation="0" hflip="1" vflip="1" label="Diode-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Model="Diode Default" Threshold="0.634767 V" MaxCurrent="1 A" Resistance="0.05 Ω" BrkDownV="0 V" SatCurrent="171.435 nA" EmCoef="2" />
+
+<item itemtype="Diode" CircId="Diode-4" mainComp="false" Show_id="false" Show_Val="false" Pos="-168,-56" rotation="0" hflip="1" vflip="1" label="Diode-4" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Model="Diode Default" Threshold="0.634767 V" MaxCurrent="1 A" Resistance="0.05 Ω" BrkDownV="0 V" SatCurrent="171.435 nA" EmCoef="2" />
+
+<item itemtype="Diode" CircId="Diode-5" mainComp="false" Show_id="false" Show_Val="false" Pos="-164,20" rotation="0" hflip="1" vflip="1" label="Diode-5" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Model="Diode Default" Threshold="0.634767 V" MaxCurrent="1 A" Resistance="0.05 Ω" BrkDownV="0 V" SatCurrent="171.435 nA" EmCoef="2" />
+
+<item itemtype="Diode" CircId="Diode-6" mainComp="false" Show_id="false" Show_Val="false" Pos="-236,20" rotation="0" hflip="1" vflip="1" label="Diode-6" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Model="Diode Default" Threshold="0.634767 V" MaxCurrent="1 A" Resistance="0.05 Ω" BrkDownV="0 V" SatCurrent="171.435 nA" EmCoef="2" />
+
+<item itemtype="Ground" CircId="Ground-9" mainComp="false" Show_id="false" Show_Val="false" Pos="-292,96" rotation="0" hflip="1" vflip="1" label="Ground-9" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Resistor" CircId="Resistor-11" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-96,-20" rotation="0" hflip="1" vflip="1" label="Resistor-11" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Ground" CircId="Ground-13" mainComp="false" Show_id="false" Show_Val="false" Pos="-76,96" rotation="0" hflip="1" vflip="1" label="Ground-13" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Oscope" CircId="Oscope-15" mainComp="false" Show_id="false" Show_Val="false" Pos="32,4" rotation="0" hflip="1" vflip="1" label="Oscope-15" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _px" Basic_Y="135 _px" BufferSize="600000" connectGnd="true" InputImped="10 MΩ" TimDiv="1000000000" TimPos="0,0,0,0," VolDiv="1,1,1,1," Tunnels=",,,," Trigger="4" Filter="0.1 V" AutoSC="4" Tracks="1" HideCh="false,false,false,false," VolPos="0,0,0,0," />
+
+<item itemtype="Node" CircId="Node-7" mainComp="false" Pos="-204,-56" />
+
+<item itemtype="Node" CircId="Node-8" mainComp="false" Pos="-204,20" />
+
+<item itemtype="Node" CircId="Node-10" mainComp="false" Pos="-272,-20" />
+
+<item itemtype="Node" CircId="Node-12" mainComp="false" Pos="-140,-20" />
+
+<item itemtype="Node" CircId="Node-16" mainComp="false" Pos="-128,-20" />
+
+<item itemtype="Connector" uid="Connector-1" startpinid="WaveGen-1-outnod" endpinid="Transformer-2-P00Pin" pointList="-404,-36,-392,-36,-392,-44,-348,-44" />
+
+<item itemtype="Connector" uid="Connector-2" startpinid="WaveGen-1-gndnod" endpinid="Transformer-2-P01Pin" pointList="-404,-28,-392,-28,-392,-20,-348,-20" />
+
+<item itemtype="Connector" uid="Connector-9" startpinid="Transformer-2-S00Pin" endpinid="Node-7-1" pointList="-316,-44,-308,-44,-308,-92,-204,-92,-204,-56" />
+
+<item itemtype="Connector" uid="Connector-10" startpinid="Diode-4-lPin" endpinid="Node-7-0" pointList="-184,-56,-204,-56" />
+
+<item itemtype="Connector" uid="Connector-11" startpinid="Node-7-2" endpinid="Diode-3-rPin" pointList="-204,-56,-224,-56" />
+
+<item itemtype="Connector" uid="Connector-12" startpinid="Transformer-2-S01Pin" endpinid="Node-8-1" pointList="-316,-20,-316,52,-204,52,-204,20" />
+
+<item itemtype="Connector" uid="Connector-13" startpinid="Diode-5-lPin" endpinid="Node-8-0" pointList="-180,20,-204,20" />
+
+<item itemtype="Connector" uid="Connector-14" startpinid="Node-8-2" endpinid="Diode-6-rPin" pointList="-204,20,-220,20" />
+
+<item itemtype="Connector" uid="Connector-15" startpinid="Ground-9-Gnd" endpinid="Node-10-1" pointList="-292,80,-292,-20,-272,-20" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="Diode-3-lPin" endpinid="Node-10-0" pointList="-256,-56,-272,-56,-272,-20" />
+
+<item itemtype="Connector" uid="Connector-17" startpinid="Node-10-2" endpinid="Diode-6-lPin" pointList="-272,-20,-272,20,-252,20" />
+
+<item itemtype="Connector" uid="Connector-19" startpinid="Diode-4-rPin" endpinid="Node-12-0" pointList="-152,-56,-140,-56,-140,-20" />
+
+<item itemtype="Connector" uid="Connector-20" startpinid="Node-12-2" endpinid="Diode-5-rPin" pointList="-140,-20,-140,20,-148,20" />
+
+<item itemtype="Connector" uid="Connector-21" startpinid="Ground-13-Gnd" endpinid="Resistor-11-rPin" pointList="-76,80,-76,-20,-80,-20" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="Oscope-15-Pin0" endpinid="Node-16-1" pointList="-56,-44,-128,-44,-128,-20" />
+
+<item itemtype="Connector" uid="Connector-23" startpinid="Resistor-11-lPin" endpinid="Node-16-0" pointList="-112,-20,-128,-20" />
+
+<item itemtype="Connector" uid="Connector-24" startpinid="Node-16-2" endpinid="Node-12-1" pointList="-128,-20,-140,-20" />
+
+</circuit>
