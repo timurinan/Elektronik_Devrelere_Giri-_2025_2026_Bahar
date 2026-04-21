@@ -1,0 +1,77 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="BJT" CircId="BJT-1" mainComp="false" Show_id="false" Show_Val="false" Pos="-204,-24" rotation="0" hflip="1" vflip="1" label="BJT-1" idLabPos="18,0" labelrot="0" valLabPos="-16,20" valLabRot="0" PNP="false" Gain="150" Vcrit="0.7 V" />
+
+<item itemtype="Battery" CircId="Battery-2" mainComp="false" Show_id="false" Show_Val="false" Pos="-328,40" rotation="90" hflip="1" vflip="1" label="Battery-2" idLabPos="-18,-22" labelrot="0" valLabPos="-10,10" valLabRot="0" Voltage="5 V" Resistance="1e-11 mΩ" />
+
+<item itemtype="Battery" CircId="Battery-3" mainComp="false" Show_id="false" Show_Val="false" Pos="-136,32" rotation="90" hflip="1" vflip="1" label="Battery-3" idLabPos="-18,-22" labelrot="0" valLabPos="-10,10" valLabRot="0" Voltage="10 V" Resistance="1e-11 mΩ" />
+
+<item itemtype="Resistor" CircId="Resistor-4" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-300,-24" rotation="0" hflip="1" vflip="1" label="Resistor-4" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="10 kΩ" />
+
+<item itemtype="Resistor" CircId="Resistor-5" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-196,-88" rotation="90" hflip="1" vflip="1" label="Resistor-5" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Ground" CircId="Ground-6" mainComp="false" Show_id="false" Show_Val="false" Pos="-188,112" rotation="0" hflip="1" vflip="1" label="Ground-6" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Amperimeter" CircId="Amperimeter-9" mainComp="false" Show_id="false" Show_Val="false" Pos="-176,-56" rotation="90" hflip="1" vflip="1" label="Amperimeter-9" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Amperimeter" CircId="Amperimeter-10" mainComp="false" Show_id="false" Show_Val="false" Pos="-252,-4" rotation="0" hflip="1" vflip="-1" label="Amperimeter-10" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Amperimeter" CircId="Amperimeter-11" mainComp="false" Show_id="false" Show_Val="false" Pos="-212,40" rotation="-90" hflip="1" vflip="-1" label="Amperimeter-11" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Voltimeter" CircId="Voltimeter-13" mainComp="false" Show_id="false" Show_Val="false" Pos="-28,-36" rotation="90" hflip="1" vflip="1" label="Voltimeter-13" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Voltimeter" CircId="Voltimeter-16" mainComp="false" Show_id="false" Show_Val="false" Pos="-276,-76" rotation="-270" hflip="-1" vflip="1" label="Voltimeter-16" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Node" CircId="Node-7" mainComp="false" Pos="-188,96" />
+
+<item itemtype="Node" CircId="Node-12" mainComp="false" Pos="-196,96" />
+
+<item itemtype="Node" CircId="Node-14" mainComp="false" Pos="-196,-48" />
+
+<item itemtype="Node" CircId="Node-15" mainComp="false" Pos="-196,8" />
+
+<item itemtype="Node" CircId="Node-17" mainComp="false" Pos="-192,-64" />
+
+<item itemtype="Node" CircId="Node-18" mainComp="false" Pos="-232,-20" />
+
+<item itemtype="Connector" uid="Connector-3" startpinid="Resistor-4-lPin" endpinid="Battery-2-lPin" pointList="-316,-24,-328,-24,-328,24" />
+
+<item itemtype="Connector" uid="Connector-5" startpinid="Resistor-5-lPin" endpinid="Battery-3-lPin" pointList="-196,-104,-196,-124,-136,-124,-136,16" />
+
+<item itemtype="Connector" uid="Connector-7" startpinid="Battery-3-rPin" endpinid="Node-7-1" pointList="-136,48,-136,96,-188,96" />
+
+<item itemtype="Connector" uid="Connector-9" startpinid="Node-7-2" endpinid="Ground-6-Gnd" pointList="-188,96,-188,96" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="Amperimeter-10-lPin" endpinid="Resistor-4-rPin" pointList="-260,-20,-260,-24,-284,-24" />
+
+<item itemtype="Connector" uid="Connector-19" startpinid="Amperimeter-11-rPin" endpinid="Node-12-1" pointList="-196,48,-196,96" />
+
+<item itemtype="Connector" uid="Connector-20" startpinid="Battery-2-rPin" endpinid="Node-12-0" pointList="-328,56,-328,96,-196,96" />
+
+<item itemtype="Connector" uid="Connector-21" startpinid="Node-12-2" endpinid="Node-7-0" pointList="-196,96,-188,96" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="Voltimeter-13-lPin" endpinid="Node-14-1" pointList="-44,-44,-196,-44,-196,-48" />
+
+<item itemtype="Connector" uid="Connector-23" startpinid="Amperimeter-9-rPin" endpinid="Node-14-0" pointList="-192,-48,-196,-48" />
+
+<item itemtype="Connector" uid="Connector-24" startpinid="Node-14-2" endpinid="BJT-1-collector" pointList="-196,-48,-196,-40" />
+
+<item itemtype="Connector" uid="Connector-25" startpinid="Voltimeter-13-rPin" endpinid="Node-15-1" pointList="-44,-28,-44,8,-196,8" />
+
+<item itemtype="Connector" uid="Connector-26" startpinid="BJT-1-emiter" endpinid="Node-15-0" pointList="-196,-8,-196,8" />
+
+<item itemtype="Connector" uid="Connector-27" startpinid="Node-15-2" endpinid="Amperimeter-11-lPin" pointList="-196,8,-196,32" />
+
+<item itemtype="Connector" uid="Connector-28" startpinid="Voltimeter-16-lPin" endpinid="Node-17-1" pointList="-260,-84,-192,-84,-192,-64" />
+
+<item itemtype="Connector" uid="Connector-29" startpinid="Amperimeter-9-lPin" endpinid="Node-17-0" pointList="-192,-64,-192,-64" />
+
+<item itemtype="Connector" uid="Connector-30" startpinid="Node-17-2" endpinid="Resistor-5-rPin" pointList="-192,-64,-192,-72,-196,-72" />
+
+<item itemtype="Connector" uid="Connector-31" startpinid="Voltimeter-16-rPin" endpinid="Node-18-1" pointList="-260,-68,-260,-20,-232,-20" />
+
+<item itemtype="Connector" uid="Connector-32" startpinid="Amperimeter-10-rPin" endpinid="Node-18-0" pointList="-244,-20,-232,-20" />
+
+<item itemtype="Connector" uid="Connector-33" startpinid="Node-18-2" endpinid="BJT-1-base" pointList="-232,-20,-220,-20,-220,-24" />
+
+</circuit>
